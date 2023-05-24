@@ -1,0 +1,64 @@
+#ENUNCIADO..........REQUERIMIENTO........HISTORIA DE USUARIO
+#Realizar la carga de dos números enteros por teclado e 
+#Imprimir su suma y su producto
+
+#DATOS DE SALIDA LO QUE ME PIDEN
+#SUMA..........sum
+#PRODUCTO......prod
+
+#DATOS DE ENTRADA:ES LO QUE NECESITO PARA ENCONTRAR LA SALIDA
+#NÚMERO 01.........num1
+#NUMERO 02.........num2
+#ALGORITMO
+#sum=num1+num2
+#prod=num1*num2
+
+#PROGRAMA 
+#1.DATOS DE ENTRADA
+#2.ALGORITMO
+#3.DATOS DE SALIDO
+
+num1=int(input("Número 01"))
+num2=int(input("Número 02"))
+
+sum=num1+num2
+prod=num1*num2
+
+print("La suma es", sum)
+print("El producto es", prod)
+
+#ENUNCIADO..........REQUERIMIENTO........HISTORIA DE USUARIO
+#Un hombre desea saber cuanto dinero se genera por concepto de intereses sobre la cantidad que tiene en inversión en el banco. 
+#El decidirá reinvertir los intereses siempre y cuando estos excedan a $7000, y en ese caso desea saber cuanto dinero tendrá 
+#finalmente en su cuenta.
+
+#DATOS DE SALIDA LO QUE ME PIDEN
+#MONTO FINAL....a
+#INTERESES........b
+
+#DATOS DE ENTRADA:ES LO QUE NECESITO PARA ENCONTRAR LA SALIDA
+#Capital........c
+#Interes........d
+#ALGORITMO
+#b=(d/100)*c
+#if d>7000
+#a=b+c
+
+#PROGRAMA 
+#1.DATOS DE ENTRADA
+#2.ALGORITMO
+#3.DATOS DE SALIDO
+
+c=float(input("Capital"))
+d=int(input("interes"))
+
+b=d*c/100
+a=b+c
+
+
+if b>7000:
+    print("Se reinvierte con unos intereses de", b)
+    print("El monto final fue de", a)
+else:
+    print("No se reinvierte con unos intereses de", b)
+    print("El monto final fue de", a)
